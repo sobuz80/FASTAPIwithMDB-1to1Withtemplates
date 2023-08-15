@@ -1,0 +1,29 @@
+
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog List</title>
+</head>
+<body>
+    <h1>Blog List</h1>
+    <ul>
+        {% for blog in blogs %}
+        <li>
+            <a href="/blog/{{ blog._id }}">{{ blog.text }}</a>
+            <a href="/blog/{{ blog._id }}/edit">Edit</a>
+            <form action="/blog/{{ blog._id }}/delete" method="post">
+                <input type="hidden" name="_method" value="delete">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/blog/add">Add New Blog</a>
+    <form action="/blog/" method="post">
+        <input type="text" name="text" required>
+        <button type="submit">Create Blog</button>
+    </form>
+
+</body>
+</html>

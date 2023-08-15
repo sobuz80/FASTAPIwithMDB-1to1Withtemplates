@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog List</title>
+</head>
+<body>
+    <h1>Blog List</h1>
+    <ul>
+        {% for blog in blogs %}
+            <li>
+                <h2>{{ blog.title }}</h2>
+                <p>{{ blog.text }}</p>
+                <h3>Comments:</h3>
+                <ul>
+                    {% for comment in blog.comments %}
+                        <li>
+                            <p>{{ comment.text }}</p>
+                            <a href="/blog/{{ blog._id }}/comment/{{ comment._id }}">View Comment</a>
+                            <h4>Replies:</h4>
+                            <ul>
+                                {% for reply in comment.replies %}
+                                    <li>
+                                        {{ reply.text }}
+                                        <a href="/blog/{{ blog._id }}/comment/{{ comment._id }}/reply/{{ reply._id }}">View Reply</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <a href="/blog/{{ blog._id }}/add_comment">Add Comment</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+<style>
+    
+</style>
+</html>

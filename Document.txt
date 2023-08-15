@@ -1,0 +1,51 @@
+http://127.0.0.1:8000/docs
+https://www.youtube.com/watch?v=0_seNFCtglk&t=394s
+uvicorn main:app --reload
+pip install --upgrade fastapi starlette
+
+
+pip install sqlalchemy databases[sqlite]
+python -m pip install --upgrade pip
+pip install fastapi uvicorn sqlalchemy databases[taskdb] alembic
+pip install fastapi uvicorn sqlalchemy databases taskdb alembic
+
+Sign up:
+•First name
+• Last name
+• Email
+• Username
+
+Login:
+
+Add new post:
+•Title
+• Description
+• Featured Image
+
+All users:
+• Full name
+• Username
+• Email
+• Date (Human readable format)
+• Actions
+o Delete
+
+
+pip install -r requirements.txt
+
+Tips
+Build a Pizza delivery API with FastAP
+https://www.youtube.com/playlist?list=PLVpp0SvtYtdfMvoSB1NwHq3J0MFHSz5FQ
+https://www.youtube.com/watch?v=WryAK9ynbjo&list=PL_9Bx_sxJkROtrlVTsGiuu-NtO_BmUfkB
+https://www.youtube.com/watch?v=_tRbsSqYN3M&list=PLEt8Tae2spYnvqurehf8s8jPycVVCXu60&index=18
+https://www.youtube.com/watch?v=d_ugoWsvGLI&list=PLwHquQFH7y8x61WqRVopSAF39VoMMmWzQ&index=3
+https://github.com/lemoncode21/fastapi-postgresql-crud/tree/master
+https://github.com/renaldyhidayatt/ecomfastapireact/tree/main
+https://github.com/renaldyhidayatt?page=3&tab=repositories
+https://github.com/wpcodevo?tab=repositories
+
+
+
+
+pip install alembic
+alembic init alembic

@@ -1,0 +1,20 @@
+project_root/
+├── app/
+│   ├── __init__.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── blog.py
+│   │   ├── comment.py
+│   │   └── reply.py
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   ├── blog.py
+│   │   ├── comment.py
+│   │   └── reply.py
+│   └── database/
+│       ├── __init__.py
+│       └── mongodb.py
+├── requirements.txt
+└── main.py  
+FastApi OneTOMany  blog, comments & replies with
+Folder structure separate for easy using   mongodb atlas online server

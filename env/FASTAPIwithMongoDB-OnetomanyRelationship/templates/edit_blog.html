@@ -1,0 +1,18 @@
+<!-- templates/edit_blog.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Blog</title>
+</head>
+<body>
+    <h1>Edit Blog</h1>
+    <form action="/blog/{{ blog._id }}" method="post">
+        <input type="hidden" name="_method" value="put">
+        <input type="text" name="text" value="{{ blog.text }}" required>
+        <button type="submit">Update Blog</button>
+    </form>
+    <a href="/blog/{{ blog._id }}">Cancel</a>
+</body>
+</html>
+
+
